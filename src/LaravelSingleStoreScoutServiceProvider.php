@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Guywarner\LaravelSingleStoreScout;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Guywarner\LaravelSingleStoreScout\Commands\LaravelSingleStoreScoutCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelSingleStoreScoutServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-singlestore-scout')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-singlestore-scout_table')
+            ->hasCommand(LaravelSingleStoreScoutCommand::class);
     }
 }

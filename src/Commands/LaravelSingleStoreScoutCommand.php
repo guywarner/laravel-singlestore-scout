@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Guywarner\LaravelSingleStoreScout\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelSingleStoreScoutCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-singlestore-scout';
 
     public $description = 'My command';
 
